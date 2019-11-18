@@ -1,0 +1,9 @@
+https://TODO.com {
+	root /srv/http/janjan
+	gzip
+	header /_ Cache-Control "public, max-age=31536000, immutable"
+}
+
+http://TODO.com {
+	redir https://TODO.com
+}
