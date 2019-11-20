@@ -1,9 +1,11 @@
-https://TODO.com {
-	root /srv/http/janjan
+{{#each hosts}}
+https://{{.}} {
+	root {{../root}}
 	gzip
 	header /_ Cache-Control "public, max-age=31536000, immutable"
 }
 
-http://TODO.com {
-	redir https://TODO.com
+http://{{.}} {
+	redir {{.}}
 }
+{{/each}}
