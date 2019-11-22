@@ -1,11 +1,15 @@
-{{#each hosts}}
-https://{{.}} {
-	root {{../root}}
+https://[host] {
+	root [root]
 	gzip
 	header /_ Cache-Control "public, max-age=31536000, immutable"
+
+	tls {
+		dns route53
+	}
 }
 
-http://{{.}} {
-	redir {{.}}
+http://*.[tld host],
+https://*.[tld host],
+http://[host] {
+	redir [host]
 }
-{{/each}}
