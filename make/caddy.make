@@ -1,11 +1,11 @@
 DIST ?=
-CADDY_HOSTS ?=
-CADDY_ROOT ?= /srv/http/$(SITE_NAME)
+CADDY_FILE ?= Caddyfile
+CADDY_ARGS ?= --root /srv/http/$(SITE_NAME) --host $(HOST)
 
 .PHONY: Caddyfile
 $(DIST)/Caddyfile: Caddyfile
 	@$m "Generating Caddyfile..."
-	@env HOSTS=$(CADDY_HOSTS) ROOT=$(CADDY_ROOT) node shared/scripts/caddy.js > $(DIST)/Caddyfile
+	@node shared/tools/template.js $(CADDY_FILE) $(CADDY_ARGS) > $(DIST)/Caddyfile
 
 .PHONY: caddy
 caddy: $(DIST)/Caddyfile
