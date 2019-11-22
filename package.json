@@ -1,0 +1,12 @@
+{
+  "name": "shared",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/romeovs/_shared",
+  "author": "Romeo <romeovs@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.5.3",
+    "handlebars-delimiters": "^1.0.0"
+  }
+}
