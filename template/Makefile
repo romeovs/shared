@@ -1,10 +1,9 @@
 include shared/makefile
 
-SITE_NAME = TODO
+SITE_NAME = [name]
 DEPLOY_HOST = do
 DEPLOY_PATH = /srv/http/$(SITE_NAME)
-DEPLOY_URL = TODO
-
+DEPLOY_URL = [url]
 
 BIN = node_modules/.bin
 FRAME = $(BIN)/frame
