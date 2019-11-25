@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require("fs").promises
 const fse = require("fs-extra")
 const path = require("path")
