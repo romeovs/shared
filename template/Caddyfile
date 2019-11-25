@@ -1,5 +1,6 @@
+# Production
 https://[host] {
-	root [root]
+	root [root]/production
 	gzip
 	header /_ Cache-Control "public, max-age=31536000, immutable"
 
@@ -8,8 +9,19 @@ https://[host] {
 	}
 }
 
+# Redirect to https and canonical domain
 http://*.[tld host],
 https://*.[tld host],
 http://[host] {
 	redir [host]
+}
+
+# Staging
+https://staging.[tld host] {
+	root [root]/staging
+	gzip
+
+	tls {
+		dns route53
+	}
 }
