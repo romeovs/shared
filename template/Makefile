@@ -1,4 +1,4 @@
-include shared/makefile
+include node_modules/shared/makefile
 
 SITE_NAME = [name]
 DEPLOY_HOST = do

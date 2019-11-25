@@ -1,8 +1,8 @@
-include ./shared/make/log.make
-include ./shared/make/info.make
-include ./shared/make/help.make
-include ./shared/make/lint.make
-include ./shared/make/caddy.make
+include node_modules/hared/make/log.make
+include node_modules/hared/make/info.make
+include node_modules/hared/make/help.make
+include node_modules/hared/make/lint.make
+include node_modules/hared/make/caddy.make
 
 .PHONY: shared
 shared: ## Update shared submodule
