@@ -10,6 +10,7 @@ const base = path.resolve(__dirname, "../template")
 const templates = [
   "Makefile",
   "package.json",
+  "README.md",
 ]
 
 async function main () {
