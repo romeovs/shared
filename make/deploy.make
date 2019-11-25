@@ -8,12 +8,12 @@ upload: upload.production
 upload.production: ## Upload the dist folder to the DEPLOY_HOST production folder
 	@$m "Uploading to production..."
 	@sleep 2
-	@rsync -vr dist/ $(DEPLOY_HOST):$(DEPLOY_PATH)/$(PRODUCTION) --delete
+	@rsync -vr dist/ $(DEPLOY_HOST):$(DEPLOY_PATH)/$(PRODUCTION) --delete --exclude Caddyfile
 
 .PHONY: upload.staging
 upload.staging: ## Upload the dist folder to the DEPLOY_HOST staging folder
 	@$m "Uploading to staging..."
-	@rsync -vr dist/ $(DEPLOY_HOST):$(DEPLOY_PATH)/$(STAGING) --delete
+	@rsync -vr dist/ $(DEPLOY_HOST):$(DEPLOY_PATH)/$(STAGING) --delete --exclude Caddyfile
 
 .PHONY: upload.caddy
 upload.caddy: ## Upload the Caddyfile
