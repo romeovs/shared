@@ -7,7 +7,6 @@ To initialize a new website:
 ```sh
 mkdir site
 cd site
-git init
-git submodule add https://github.com/romeovs/_shared.git shared
-shared/init
+yarn add https://github.com/romeovs/_shared
+./node_modules/.bin/init
 ```
