@@ -1,4 +1,5 @@
 const fs = require("fs").promises
+const fse = require("fs-extra")
 const path = require("path")
 const { spawn } = require("child_process")
 
@@ -30,7 +31,7 @@ async function main () {
 
   for (const file of files) {
     const pth = path.join(base, file)
-    await fs.copyFile(pth, file)
+    await fse.copy(pth, file)
   }
 
   log("Executing templates")
