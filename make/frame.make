@@ -28,11 +28,7 @@ serve: ## Serve dist folder
 
 .PHONY: reinstall r
 reinstall: ## Reinstall the frame dependency
-	@$m "Reinstalling Frame.js"
-	@yarn add ../frame
-	@rm -rf node_modules/frame/node_modules/react
-	@rm -rf node_modules/frame/node_modules/react-dom
-	@rm -rf node_modules/frame/node_modules/react-head
+reinstall: frame.install clean.install
 
 .PHONY: clean c
 c: clean
@@ -42,3 +38,15 @@ clean: ## Clean up non-image assets
 	@find $(DIST) -type d -empty | xargs rm -r
 	@find $(DIST) -type d -empty | xargs rm -r
 	@find $(DIST) -type d -empty | xargs rm -r
+
+
+.PHONY: frame.install
+frame.install:
+	@$m "Reinstalling Frame.js"
+	@yarn add ../frame
+
+.PHONY: clean.install
+clean.install:
+	@rm -rf node_modules/frame/node_modules/react
+	@rm -rf node_modules/frame/node_modules/react-dom
+	@rm -rf node_modules/frame/node_modules/react-head
