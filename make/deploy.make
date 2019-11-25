@@ -18,7 +18,7 @@ upload.staging: ## Upload the dist folder to the DEPLOY_HOST staging folder
 .PHONY: upload.caddy
 upload.caddy: ## Upload the Caddyfile
 	@$m "Uploading Caddyfile"
-	@scp -vr dist/Caddyfile $(DEPLOY_HOST):$(DEPLOY_PATH)/Caddyfile
+	@scp dist/Caddyfile $(DEPLOY_HOST):$(DEPLOY_PATH)/Caddyfile
 
 .PHONY: open
 open: ## Open the website at DEPLOY_URL
