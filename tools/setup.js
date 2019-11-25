@@ -43,7 +43,10 @@ async function main () {
   }
 
   log("Installing packages")
-  await yarn()
+  await cmd("yarn", [])
+
+  log("Setting up git")
+  await cmd("git", ["init"])
 
   log("Done!")
 }
@@ -53,8 +56,8 @@ main().catch(function (err) {
   process.exit(1)
 })
 
-function yarn () {
-  const child = spawn("yarn", [], {
+function cmd (cmd, args) {
+  const child = spawn(cmd, args, {
     cwd: process.cwd(),
     detached: true,
     stdio: "inherit",
