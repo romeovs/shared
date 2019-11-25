@@ -1,1 +1,1 @@
-extends: ./shared/eslintrc.yml
+extends: ./node_modules/shared/eslintrc.yml
