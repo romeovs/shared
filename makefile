@@ -5,6 +5,7 @@ include node_modules/shared/make/lint.make
 include node_modules/shared/make/caddy.make
 include node_modules/shared/make/frame.make
 include node_modules/shared/make/deploy.make
+include node_modules/shared/make/typecheck.make
 
 .PHONY: shared
 shared: ## Update shared submodule
