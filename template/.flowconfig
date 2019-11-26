@@ -1,7 +1,7 @@
 [ignore]
-.*/node_modules/.*
-.*/dist/.*
-.*/.frame_cache/.*
+<PROJECT_ROOT>/node_modules/.*
+<PROJECT_ROOT>/.frame_cache/.*
+<PROJECT_ROOT>/dist/.*
 
 [include]
 
@@ -15,6 +15,5 @@ all=true
 esproposal.optional_chaining=enable
 suppress_comment=\\(.\\|\n\\)*\\$ExpectError
 exact_by_default=true
-module.name_mapper='^frame/server$' ->'<PROJECT_ROOT>/src/lib/server'
 
 [strict]
