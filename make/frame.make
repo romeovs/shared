@@ -51,4 +51,3 @@ clean.install:
 	@rm -rf node_modules/frame/node_modules/react-dom
 	@rm -rf node_modules/frame/node_modules/react-head
 	@rm -rf node_modules/babel-eslint/node_modules/@babel
-	@cp node_modules/frame/dist/lib/*.flow .types

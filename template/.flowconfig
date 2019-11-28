@@ -2,11 +2,13 @@
 <PROJECT_ROOT>/node_modules/.*
 <PROJECT_ROOT>/.frame_cache/.*
 <PROJECT_ROOT>/dist/.*
+!<PROJECT_ROOT>/node_modules/frame/dist/types
 
 [include]
 
 [libs]
 ./.types
+./node_modules/frame/dist/types
 
 [lints]
 
