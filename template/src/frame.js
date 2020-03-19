@@ -1,9 +1,9 @@
-import { type RouteDef } from "frame/server"
+import { Route, type RouteDef } from "@romeovs/frame/server"
 
 export default {
 	async routes () : Promise<RouteDef[]> {
 		return [
-			// TODO
+			Route("/", import("./pages/index"), {}),
 		]
 	},
 }
