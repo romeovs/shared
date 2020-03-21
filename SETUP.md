@@ -37,6 +37,12 @@ pop.example.com.            A      185.182.56.245
 smtp.example.com.           A      185.182.56.245
 ```
 
+## Google Webmasters
+
+- **Admin:** <https://search.google.com/search-console>
+- Click **Add Property**
+- Add the `TXT` to DNS in AWS
+
 ## Forwarders
 
 Add forwarders to `example.client@gmail.com` for example on `ADMIN ~ example.com
