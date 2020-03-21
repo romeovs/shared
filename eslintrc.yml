@@ -353,7 +353,7 @@ rules:
   # Enforces consistent spacing before the type annotation colon
   flowtype/space-before-type-colon:
     - error
-    - always
+    - never
 
   # Enforces a consistent naming pattern for type aliases
   flowtype/type-id-match:
