@@ -34,6 +34,7 @@ reinstall: frame.install clean.install
 c: clean
 clean: ## Clean up non-image assets
 	@$m "Cleaning non image assets..."
+	@mkdir -p $(DIST)
 	@find $(DIST) -type f | grep -v $(DIST)/_/im/ | xargs rm
 	@find $(DIST) -type d -empty | xargs rm -r
 	@find $(DIST) -type d -empty | xargs rm -r
