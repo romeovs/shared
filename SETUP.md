@@ -22,6 +22,7 @@ Email servers are hosted on [Versio.nl](<https://versio.nl>).
 
 - **Log in:** <https://www.versio.nl/customer/>
 - **Admin:** <https://vserver379.axc.eu>
+- **Spam Test:** <https://http://isnotspam.com>
 
 ## DNS Set up
 
@@ -38,4 +39,5 @@ smtp.example.com.           A      185.182.56.245
 
 ## Forwarders
 
-Add forwarders to `example.client@gmail.com` for example on `ADMIN ~ example.com ~ Forwarders`.
+Add forwarders to `example.client@gmail.com` for example on `ADMIN ~ example.com
+~ Forwarders`.
