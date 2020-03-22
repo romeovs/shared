@@ -8,7 +8,7 @@
 
 [libs]
 ./.types
-./node_modules/frame/dist/types
+./node_modules/@romeovs/frame/dist/types
 
 [lints]
 
