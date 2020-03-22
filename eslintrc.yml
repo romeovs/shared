@@ -1642,6 +1642,9 @@ rules:
   # Require or disallow a space before function opening parenthesis
   space-before-function-paren:
     - error
+    - anonymous: never
+      named: never
+      asyncArrow: always
 
   # Disallow or enforce spaces inside of parentheses
   space-in-parens:
