@@ -22,7 +22,7 @@ Email servers are hosted on [Versio.nl](<https://versio.nl>).
 
 - **Log in:** <https://www.versio.nl/customer/>
 - **Admin:** <https://vserver379.axc.eu>
-- **Spam Test:** <https://http://isnotspam.com>
+- **Spam Test:** <https://isnotspam.com>
 
 ## DNS Set up
 
