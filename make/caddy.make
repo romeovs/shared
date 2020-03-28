@@ -1,6 +1,6 @@
 DIST ?=
 CADDY_FILE ?= Caddyfile
-CADDY_ARGS ?= --root $(SITE_NAME) --host $(HOST)
+CADDY_ARGS ?= --host $(HOST) --name $(SITE_NAME)
 
 .PHONY: Caddyfile
 $(DIST)/Caddyfile: Caddyfile
