@@ -1,6 +1,6 @@
 DIST ?=
 CADDY_FILE ?= Caddyfile
-CADDY_ARGS ?= --root /srv/http/$(SITE_NAME) --host $(HOST)
+CADDY_ARGS ?= --root $(SITE_NAME) --host $(HOST)
 
 .PHONY: Caddyfile
 $(DIST)/Caddyfile: Caddyfile
